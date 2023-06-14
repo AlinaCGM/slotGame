@@ -1,4 +1,4 @@
-# Game Developer Test
+# Slot game
 
 # Prerequisites
 
