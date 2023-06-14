@@ -38,5 +38,8 @@ A simple slots 3x3 game, rendered in the fronted with the help of PixiJS library
 <br>
 
 
-https://github.com/AlinaCGM/slotGame/assets/71669291/3b6db855-941e-40d3-bd05-2e15c8c1e517
+
+https://github.com/AlinaCGM/slotGame/assets/71669291/daa1c51a-c8f7-4109-ab07-634688e7e8ee
+
+
 
