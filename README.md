@@ -36,3 +36,7 @@ Both projects will hot reload on any code change.
 
 A simple slots 3x3 game, rendered in the fronted with the help of PixiJS library and the backend written in NodeJS is returning the game outcome. The game is written with Typescript. The rules are simple, 2 or more similar symbols in a row are considered a small win, if there are 3 similar symbols in a row, a big win is considered. The backend returns a bonus round, with 10% chance of win, in this case, the game will spin the reels automatically, without awaiting for the user input. All the above situations are providing a nice and clear feedback on the UI to the player.
 <br>
+
+
+https://github.com/AlinaCGM/slotGame/assets/71669291/3b6db855-941e-40d3-bd05-2e15c8c1e517
+
