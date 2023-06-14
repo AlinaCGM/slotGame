@@ -1,36 +1,24 @@
 import * as PIXI from "pixi.js";
-import { Texture, Sprite } from "pixi.js";
-
-export interface SymbolSprite extends Sprite {
-  texture: Texture;
-}
+import { Texture } from "pixi.js";
 
 export interface Reel {
   container: PIXI.Container;
-  symbols: SymbolSprite[];
+  symbols: PIXI.Sprite[];
   position: number;
   previousPosition: number;
-  blur: PIXI.BlurFilter;
   textures: Texture[];
-  spinning: boolean;
 }
 
-export interface Tween {
+export interface AnimationObject {
   object: any;
   property: string;
   propertyBeginValue: number;
   target: number;
   easing: (t: number) => number;
   time: number;
-  change?: ((tween: Tween) => void) | null;
-  complete?: ((tween: Tween) => void) | null;
+  change?: ((animationObject: AnimationObject) => void) | null;
+  complete?: ((animationObject: AnimationObject) => void) | null;
   start: number;
-}
-
-export interface BonusRoundWon {
-  bonusRoundWon: boolean;
-  row?: number;
-  winType: string;
 }
 
 export interface GameOutcome {
@@ -39,12 +27,10 @@ export interface GameOutcome {
   bonusRoundWon: boolean;
 }
 
-export interface IMessage {
+export interface TextMessage {
   text: string;
   styleMessage: PIXI.TextStyle;
 }
-
-export { Texture, Sprite };
 
 export type WinType = "Big Win" | "Small Win" | "No Win";
 export type ReelSymbols = Texture[][];
